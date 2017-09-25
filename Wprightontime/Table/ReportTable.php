@@ -6,6 +6,11 @@ if (! defined('WPROT_ROOT')) {
     die("Can't touch this...");
 }
 
+/**
+ * ReportTable class extends BaseTable.
+ * 
+ * Handles the data for each column of the table for the reports view.
+ */
 class ReportTable extends BaseTable
 {
     public function __construct()

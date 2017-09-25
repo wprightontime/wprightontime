@@ -49,6 +49,12 @@ final class Admin
         }
     }
 
+    /**
+     * Checks requirements in the admin area (timezone, client key, configured call)
+     * show a admin notice if requirements not configured.
+     *
+     * @return void
+     */
     public function adminRequirementsCheck()
     {
         if (! $this->local_timezone) {
@@ -73,6 +79,11 @@ final class Admin
         }
     }
 
+    /**
+     * Checks if user's plan is valid and set a time lock to limit this call to be daily.
+     *
+     * @return bool
+     */
     public function checkPlan()
     {
         if (! isset($this->options['wprightontime_plan'])) {
@@ -102,6 +113,11 @@ final class Admin
         return true;
     }
 
+    /**
+     * Checks if user have a call configured and set a time lock to limit this call to be daily.
+     *
+     * @return bool
+     */
     public function checkCall()
     {
         if (! isset($this->options['wprightontime_calls'])) {
@@ -131,6 +147,11 @@ final class Admin
         return true;
     }
 
+    /**
+     * Helper function to print admin notices.
+     *
+     * @return void
+     */
     public function wprotAdminNotices()
     {
         foreach ($this->admin_warnings as $value) {

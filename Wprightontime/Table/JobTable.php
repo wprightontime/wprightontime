@@ -6,6 +6,11 @@ if (! defined('WPROT_ROOT')) {
     die("Can't touch this...");
 }
 
+/**
+ * JobTable class extends BaseTable.
+ * 
+ * Handles the data for each column of the table for the calls view.
+ */
 class JobTable extends BaseTable
 {
     public function __construct()

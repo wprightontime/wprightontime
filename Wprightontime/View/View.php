@@ -38,7 +38,12 @@ class View
         $this->current_tab['value'] = $value;
     }
 
-    // render view
+    /**
+     * Render the current view
+     *
+     * @param array $options
+     * @return string
+     */
     public function getView($options)
     {   
         if (empty($options['wprightontime_clientkey']) && $this->current_tab['key'] != 'settings') {
@@ -57,6 +62,11 @@ class View
         return WPROT_ROOT.'/Wprightontime/Views/'.$this->current_tab['key'].'.php';
     }
 
+    /**
+     * Outputs the navigation in the admin menu.
+     *
+     * @return void
+     */
     public function getAdminNav()
     {
         echo '<h2 class="nav-tab-wrapper">';
@@ -66,6 +76,11 @@ class View
         echo '</h2>';
     }
 
+    /**
+     * Checks the current tab to render the proper view.
+     *
+     * @return bool
+     */
     public function checkUrlTab()
     {
         if (! isset($_GET['tab'])) {
@@ -84,6 +99,11 @@ class View
         return true;
     }
 
+    /**
+     * Gets the correct table to show in each view.
+     *
+     * @return bool
+     */
     public function getWpTable()
     {
         switch ($this->current_tab['key']) {

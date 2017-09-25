@@ -19,6 +19,12 @@ class CallFormProcess
         add_action('admin_post_call_form', array($this, 'callFormProcess'), 10);
     }
 
+    /**
+     * Function that handles the call's creation process.
+     * Sanitize the user input and send the data to server to save the call time.
+     *
+     * @return void
+     */
     public function callFormProcess()
     {
         unset($_SESSION['wprot_api_message']);

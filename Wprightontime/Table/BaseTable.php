@@ -12,12 +12,21 @@ if( ! class_exists( 'WP_List_Table' ) ) {
 
 use WP_List_Table;
 
+/**
+ * BaseTable class extends WP_List_Table
+ * 
+ */
 class BaseTable extends WP_List_Table
 {
     public $table_data = [];
 
     public $raw_data;
 
+    /**
+     * Prepares data to be displayed in the table.
+     *
+     * @return void
+     */
     public function prepare_items()
     {
         $columns  = $this->get_columns();

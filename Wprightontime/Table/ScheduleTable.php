@@ -6,6 +6,11 @@ if (! defined('WPROT_ROOT')) {
     die("Can't touch this...");
 }
 
+/**
+ * ScheduleTable class extends BaseTable.
+ * 
+ * Handles the data for each column of the table for the schedule view.
+ */
 class ScheduleTable extends BaseTable
 {
     public function __construct()

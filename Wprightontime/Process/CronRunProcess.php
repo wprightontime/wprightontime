@@ -13,6 +13,11 @@ class CronRunProcess
         add_action('admin_post_wprot_manual_cron', array($this, 'cronRunProcess'), 10);
     }
 
+    /**
+     * Call wp_cron manualy from within the plugins settings page
+     *
+     * @return void
+     */
     public function cronRunProcess()
     {
         unset($_SESSION['wprot_api_message']);

@@ -8,6 +8,14 @@ if (! defined('WPROT_ROOT')) {
 
 use Wprightontime\Http\WprotHttp;
 
+/**
+ * UserData class.
+ * 
+ * Fetch user data from the api endpoint.
+ * Gets the reports, schedules, calls, plan for the user.
+ * Sets the time lock to prevent the api call on every page load.
+ *  
+ */
 class UserData
 {
     public static function getUserData($tab, $options)

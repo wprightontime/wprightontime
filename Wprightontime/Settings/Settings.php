@@ -6,6 +6,11 @@ if (! defined('WPROT_ROOT')) {
     die("Can't touch this...");
 }
 
+/**
+ * Settings class, handle the creation of the settings page.
+ * Uses wp hooks and apis.
+ * 
+ */
 class Settings 
 {
     public $admin_object;

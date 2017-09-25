@@ -1,0 +1,214 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WpRightOnTime\n"
+"POT-Creation-Date: 2017-03-20 13:52+0000\n"
+"PO-Revision-Date: 2017-03-20 11:12+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ../Wprightontime\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en_US\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__;esc_html_e;esc_attr__;esc_attr_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: Admin/Admin.php:60
+#, php-format
+msgid "Please configure a city timezone! In <a href=\"%s\">General settings.</a>"
+msgstr ""
+
+#: Admin/Admin.php:72
+#, php-format
+msgid "ATENTION! system scheduler is curently disabled, you need to configure your WpRightOnTime api key in <a href=\"%s\">WpRightOnTime settings</a>, and configure one call, in order  for your site scheduled events to function properly."
+msgstr ""
+
+#: Settings/Settings.php:41
+msgid "Settings"
+msgstr ""
+
+#: Settings/Settings.php:45
+msgid "API Key"
+msgstr ""
+
+#: Table/JobTable.php:16
+msgid "call"
+msgstr ""
+
+#: Table/JobTable.php:17
+msgid "calls"
+msgstr ""
+
+#: Table/JobTable.php:36
+msgid "Sorry, no calls found. Please add a new call."
+msgstr ""
+
+#: Table/JobTable.php:54
+msgid "Call Time"
+msgstr ""
+
+#: Table/JobTable.php:55 Table/ReportTable.php:65
+msgid "Status"
+msgstr ""
+
+#: Table/JobTable.php:83
+msgid "Inactive"
+msgstr ""
+
+#: Table/JobTable.php:83
+msgid "Active"
+msgstr ""
+
+#: Table/ReportTable.php:15
+msgid "report"
+msgstr ""
+
+#: Table/ReportTable.php:16
+msgid "reports"
+msgstr ""
+
+#: Table/ReportTable.php:36
+msgid "No reports found."
+msgstr ""
+
+#: Table/ReportTable.php:63
+msgid "Call date/time"
+msgstr ""
+
+#: Table/ReportTable.php:64
+msgid "Http response code (*)"
+msgstr ""
+
+#: Table/ScheduleTable.php:15
+msgid "schedule"
+msgstr ""
+
+#: Table/ScheduleTable.php:16
+msgid "schedules"
+msgstr ""
+
+#: Table/ScheduleTable.php:35
+msgid "No scheduled calls found, try to add a call first."
+msgstr ""
+
+#: Table/ScheduleTable.php:62
+msgid "Next Calls"
+msgstr ""
+
+#: Table/ScheduleTable.php:63
+msgid "Due in"
+msgstr ""
+
+#: Views/Fields/clientkey_field.php:19
+#, php-format
+msgid "You can find the api key in your account dashboard. <a href=\"%s\">wprightontime.com</a>."
+msgstr ""
+
+#: Views/calls.php:28
+msgid "Add New"
+msgstr ""
+
+#: Views/calls.php:34
+msgid "Make a call Every:"
+msgstr ""
+
+#: Views/calls.php:37
+msgid "When?"
+msgstr ""
+
+#: Views/calls.php:39
+msgid "Month"
+msgstr ""
+
+#: Views/calls.php:40
+msgid "Monday"
+msgstr ""
+
+#: Views/calls.php:41
+msgid "Tuesday"
+msgstr ""
+
+#: Views/calls.php:42
+msgid "Wednesday"
+msgstr ""
+
+#: Views/calls.php:43
+msgid "Thursday"
+msgstr ""
+
+#: Views/calls.php:44
+msgid "Friday"
+msgstr ""
+
+#: Views/calls.php:45
+msgid "Saturday"
+msgstr ""
+
+#: Views/calls.php:46
+msgid "Sunday"
+msgstr ""
+
+#: Views/calls.php:47
+msgid "Day"
+msgstr ""
+
+#: Views/calls.php:50
+msgid "Hour"
+msgstr ""
+
+#: Views/calls.php:54
+msgid "Minute"
+msgstr ""
+
+#: Views/calls.php:58
+msgid "Select a recuring event option."
+msgstr ""
+
+#: Views/calls.php:63
+msgid "Day:"
+msgstr ""
+
+#: Views/calls.php:66
+msgid "A value between 1 and 31. Don't add leading 0, and beware that for values above 28, there's a chance that your call will skip some months."
+msgstr ""
+
+#: Views/calls.php:71
+msgid "Hour:"
+msgstr ""
+
+#: Views/calls.php:74
+msgid "A value between 0 and 23. Don't add leading 0."
+msgstr ""
+
+#: Views/calls.php:79
+msgid "Minute:"
+msgstr ""
+
+#: Views/calls.php:82
+msgid "A value between 0 and 59. Don't add leading 0."
+msgstr ""
+
+#: Views/no-settings.php:7
+#, php-format
+msgid "It seems that you dont have your api key configured. Please addit in the <a href=\"%s\">settings tab</a>."
+msgstr ""
+
+#: Views/settings.php:8
+msgid "Settings Saved"
+msgstr ""
+
+#: Views/settings.php:30
+msgid "System Cron manual run"
+msgstr ""
+
+#: Views/settings.php:33
+msgid "Run Cron"
+msgstr ""
+
+#: Views/settings.php:36
+msgid "If you ever need to activate a scheduled event, and dont want to change the call time. Click \"Run cron\"."
+msgstr ""

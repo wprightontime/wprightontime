@@ -2,8 +2,8 @@
 Contributors: telmoteixeira
 Tags: cron, scheduler, wp cron, webcron, wprightontime
 Requires at least: 4.7
-Tested up to: 4.7.5
-Stable tag: 1.0.0
+Tested up to: 5.0
+Stable tag: 1.0.1
 License: GPL2 or Later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,5 +34,8 @@ To use this service you will need a valid API key from <a href="https://www.wpri
 3. Reports screen
 
 == Changelog ==
+= 1.0.1 =
+* New api url.
+
 = 1.0.0 =
-* First stable version
+* First stable version.

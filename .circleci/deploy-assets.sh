@@ -34,7 +34,7 @@ svn co -q "http://svn.wp-plugins.org/$WP_ORG_PLUGIN_NAME" $PLUGIN_SVN_PATH
 rm -rf $PLUGIN_SVN_PATH/assets
 
 # Copy our plugin assets as the new assets directory
-cp -r ./assets $PLUGIN_SVN_PATH/assets
+cp -r ./plugin_dir_assets $PLUGIN_SVN_PATH/assets
 
 # Move to SVN directory
 cd $PLUGIN_SVN_PATH

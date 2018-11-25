@@ -1,16 +1,14 @@
+# Adapted from carlalexander/passwords-evolved 
+# https://github.com/carlalexander/passwords-evolved/blob/master/.circleci/deploy-assets.sh
 version: 2.0
 
 references:
   # Environment variables
   #
-  WP_CORE_DIR: &WP_CORE_DIR
-    /tmp/wordpress
-  WP_HOST: &WP_HOST
-    passwords-evolved.test
   WP_ORG_PLUGIN_NAME: &WP_ORG_PLUGIN_NAME
-    passwords-evolved
+    wprightontime
   WP_ORG_USERNAME: &WP_ORG_USERNAME
-    carlalexander
+    telmoteixeira
 
   # Default container configuration
   #
@@ -18,11 +16,9 @@ references:
     docker:
       - image: circleci/php:7.2
     environment:
-      - WP_CORE_DIR: *WP_CORE_DIR
-      - WP_HOST: *WP_HOST
       - WP_ORG_PLUGIN_NAME: *WP_ORG_PLUGIN_NAME
       - WP_ORG_USERNAME: *WP_ORG_USERNAME
-    working_directory: ~/passwords-evolved
+    working_directory: ~/wprightontime
 
   workspace_root: &workspace_root
     /tmp

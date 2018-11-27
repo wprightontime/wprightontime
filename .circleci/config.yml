@@ -1,5 +1,5 @@
 # Adapted from carlalexander/passwords-evolved 
-# https://github.com/carlalexander/passwords-evolved/blob/master/.circleci/deploy-assets.sh
+# https://github.com/carlalexander/passwords-evolved/blob/master/.circleci/config.yml
 version: 2.0
 
 references:
@@ -67,8 +67,8 @@ workflows:
             branches:
               only:
                 - master
-      # - deploy_plugin:
-      #     filters:
-      #       branches:
-      #         only:
-      #           - master
+      - deploy_plugin:
+          filters:
+            branches:
+              only:
+                - master

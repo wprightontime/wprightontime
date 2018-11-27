@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# Adapted from carlalexander/passwords-evolved 
+# https://github.com/carlalexander/passwords-evolved/blob/master/.circleci/deploy-assets.sh
 
 if [[ -z "$CIRCLECI" ]]; then
     echo "This script can only be run by CircleCI. Aborting." 1>&2

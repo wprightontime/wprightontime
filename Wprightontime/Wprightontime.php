@@ -48,7 +48,7 @@ final class Wprightontime
             '<a href="mailto:support@wprightontime.com" target="_blank">Support</a>'
             );
             
-        return $links;
+        return \apply_filters('wprotActionLinks', $links);
     }
 
     /**

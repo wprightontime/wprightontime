@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WpRightOnTime
  * Description: Every WordPress schedule rigth on time!
- * Version:     1.0.1
+ * Version:     1.1.0
  * Author:      WpRightOnTime
  * Author URI:  https://www.wprightontime.com
  * License:     GPL2
@@ -19,7 +19,7 @@ if (! defined('ABSPATH')) {
 // Define plugin constants
 define('WPROT_ROOT', (__DIR__));
 define('WPROT_PLUGIN_FILE', (__FILE__));
-define('WPROT_PLUGIN_VERSION', '1.0.1');
+define('WPROT_PLUGIN_VERSION', '1.1.0');
 define('WPROT_API', 'https://app.wprightontime.com/api/');
 
 

@@ -157,7 +157,9 @@ final class Admin
         foreach ($this->admin_warnings as $value) {
             $class = 'notice notice-'.$value['type'];
 
-            printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( $class ), $value['message'] );
+            $message_html = sprintf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( $class ), $value['message'] );
+
+            echo apply_filters('wprotAdminNotices', $message_html, $class, $value);
         }
     }
 
